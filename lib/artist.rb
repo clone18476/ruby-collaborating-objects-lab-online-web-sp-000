@@ -10,10 +10,6 @@ class Artist
     @songs = [] #array of songs for each instance
   end
 
-  #this exposes the @@all Class Variable
-  def self.all
-    @@all
-  end
 
   def add_song(song)
     #called by the song instance, adds in that song instance
@@ -53,6 +49,12 @@ class Artist
   def save
     @@all << self
   end
+
+  #this exposes the @@all Class Variable
+  def self.all
+    @@all
+  end
+
 
   #this method prints out an array of song names
   #by accessing the name attribute of each song

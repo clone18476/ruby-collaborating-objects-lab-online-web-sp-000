@@ -13,6 +13,7 @@ class Artist
   #this exposes the @@all Class Variable
   def self.all
     @@all
+    
   end
 
   def add_song(song)

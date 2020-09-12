@@ -31,7 +31,7 @@ class Song
   end
 
   def self.all
-    @@all
+    @artist
   end
 
 end
